@@ -1,6 +1,10 @@
 #ifndef PHP_MOSQUITTO_H
 #define PHP_MOSQUITTO_H
 
+#ifndef PHP_FE_END
+#define PHP_FE_END {NULL, NULL, NULL}
+#endif
+
 #define PHP_MOSQUITTO_VERSION "0.4.0"
 
 extern zend_module_entry mosquitto_module_entry;
